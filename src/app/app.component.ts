@@ -1,4 +1,12 @@
 import { Component, VERSION } from '@angular/core';
+ import {Router } from '@angular/router';
+import {MatDialog} from '@angular/material/dialog';
+
+ import {DialogComponent} from './dialog/dialog.component';
+ 
+;
+ 
+
 
 @Component({
   selector: 'my-app',
@@ -6,8 +14,8 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
-
+  name = 'Angular ' + VERSION.major; 
+ constructor(public dialog: MatDialog) {}
 
 Company_Employees = 
     [{Id:1,FirstName:"Portia", LastName: "Mashaba", Title: "Software Developer", Age:21, img:"https://us.123rf.com/450wm/sam74100/sam741001503/sam74100150300105/38081251-portrait-of-a-young-african-american-business-woman-black-people.jpg?ver=6" },
@@ -22,7 +30,26 @@ Company_Employees =
     {Id:10,FirstName:"Nelly", LastName: "Msiza", Title: "Business Analyst", Age:24, img: "https://secureservercdn.net/192.169.221.188/ca0.384.myftpupload.com/wp-content/uploads/2015/02/5-startegies-for-finding-a-dream-job.jpg"}];
 
 
+openDialog(Employee) {
+    const dialogRef = this.dialog.open(DialogComponent,{
+      data:{
+        message: 'Are you sure want to delete?',
+        buttonText: {
+          ok: 'Delete',
+          cancel: 'No'
+        }
+      }
+    });
 
+       dialogRef.afterClosed().subscribe((confirmed: boolean) => {
+      if (confirmed) {
+      const index = this.Company_Employees.indexOf(Employee,0)
+      if (index >-1) {
+        this.Company_Employees.splice(index,1);
+      }
+      }
+    });
+     }
 
 
 
