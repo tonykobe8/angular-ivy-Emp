@@ -29,7 +29,9 @@ Company_Employees =
     {Id:9,FirstName:"Portia", LastName: "Mashaba", Title: "Software Developer", Age:21, img:"https://image.shutterstock.com/image-photo/african-american-customer-support-operator-260nw-1698411634.jpg" },
     {Id:10,FirstName:"Nelly", LastName: "Msiza", Title: "Business Analyst", Age:24, img: "https://secureservercdn.net/192.169.221.188/ca0.384.myftpupload.com/wp-content/uploads/2015/02/5-startegies-for-finding-a-dream-job.jpg"}];
 
+updateDialog(Employee) {
 
+}
 openDialog(Employee) {
     const dialogRef = this.dialog.open(DialogComponent,{
       data:{
