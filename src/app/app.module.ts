@@ -14,9 +14,8 @@ import { DialogComponent } from './dialog/dialog.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { EmployeeComponent } from './employee/employee.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
-import { ProjectComponent } from './project/project.component';
-import { DepartmentComponent } from './department/department.component';
+
+
 
 import { Routes, RouterModule } from '@angular/router';
 
@@ -28,7 +27,7 @@ import { Routes, RouterModule } from '@angular/router';
 @NgModule({
   imports:[ BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule],
 
-  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, EmployeeListComponent, ProjectComponent, DepartmentComponent],
+  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent],
    entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
 })
