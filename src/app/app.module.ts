@@ -13,12 +13,12 @@ import {MatIconModule} from '@angular/material/icon';
 import { DialogComponent } from './dialog/dialog.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { EmployeeComponent } from './employee/employee.component';
 
+
+import { EmployeeComponent } from './employee/employee.component';
 import { ProjectComponent } from './project/project.component';
 import { DepartmentComponent } from './department/department.component';
-
-import { Routes, RouterModule } from '@angular/router';
+import {AppRoutingModule } from './app-routing.module';
 
 
 
