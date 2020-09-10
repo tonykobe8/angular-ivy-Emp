@@ -15,12 +15,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { EmployeeComponent } from './employee/employee.component';
 
-
-
-import { Routes, RouterModule } from '@angular/router';
 import { ProjectComponent } from './project/project.component';
 import { DepartmentComponent } from './department/department.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
+
 
 
 
@@ -29,7 +26,7 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 @NgModule({
   imports:[ BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule],
 
-  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent, DepartmentComponent, EmployeeListComponent],
+  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent, DepartmentComponent],
    entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
 })
