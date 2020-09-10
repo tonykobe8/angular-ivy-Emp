@@ -18,6 +18,7 @@ import { EmployeeComponent } from './employee/employee.component';
 
 
 import { Routes, RouterModule } from '@angular/router';
+import { ProjectComponent } from './project/project.component';
 
 
 
@@ -27,7 +28,7 @@ import { Routes, RouterModule } from '@angular/router';
 @NgModule({
   imports:[ BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule],
 
-  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent],
+  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent],
    entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
 })
