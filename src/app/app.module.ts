@@ -18,7 +18,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { ProjectComponent } from './project/project.component';
 import { DepartmentComponent } from './department/department.component';
 
-
+import { Routes, RouterModule } from '@angular/router';
 
 
 
