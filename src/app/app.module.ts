@@ -13,6 +13,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { DialogComponent } from './dialog/dialog.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { EmployeeComponent } from './employee/employee.component';
+
 
 
 
@@ -20,7 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 @NgModule({
   imports:[ BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule],
 
-  declarations: [ AppComponent, DialogComponent, HelloComponent],
+  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent],
    entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
 })
