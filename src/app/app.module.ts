@@ -19,11 +19,12 @@ import { EmployeeComponent } from './employee/employee.component';
 import { ProjectComponent } from './project/project.component';
 import { DepartmentComponent } from './department/department.component';
 import {AppRoutingModule } from './app-routing.module';
+import { Routes, RouterModule } from '@angular/router';
 
 
 
 @NgModule({
-  imports:[ BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule],
+  imports:[ AppRoutingModule ,BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule],
 
   declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent, DepartmentComponent],
    entryComponents:[DialogComponent],
