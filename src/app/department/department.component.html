@@ -15,3 +15,17 @@
   
 
 <ul><li>Marketing Department </li></ul>
+<mat-grid-list cols="3" rowHeight="400px">
+  <mat-grid-tile *ngFor="let Employee of  IT_Employees">
+<mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <mat-card-content>
+       <h2>{{Employee.FirstName}} {{Employee.LastName}} </h2>
+    <p class="title">{{Employee.Title}}</p>
+    <p>{{Employee.Age}}</p>
+     </mat-card-content>
+</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<ul><li>Marketing Department </li></ul>
