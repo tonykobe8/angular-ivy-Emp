@@ -18,7 +18,8 @@ Company_Employees =
     {FirstName:"Portia", LastName: "Mashaba", Title: "Software Developer", Age:21, img:"https://www.lsmensclothing.com/wp-content/uploads/2018/10/what-color-suit-to-buy.jpeg" },
     {FirstName:"Nelly", LastName: "Msiza", Title: "Business Analyst", Age:24, img: "https://cdn.cbtnews.com/wp-content/uploads/2017/04/shutterstock_403315558.jpg"}, 
     {FirstName:"Portia", LastName: "Mashaba", Title: "Software Developer", Age:21, img:"https://image.shutterstock.com/image-photo/african-american-customer-support-operator-260nw-1698411634.jpg" },
-    {FirstName:"Nelly", LastName: "Msiza", Title: "Business Analyst", Age:24, img: "https://secureservercdn.net/192.169.221.188/ca0.384.myftpupload.com/wp-content/uploads/2015/02/5-startegies-for-finding-a-dream-job.jpg"}];
+    {FirstName:"Nelly", LastName: "Msiza", Title: "Business Analyst", Age:24, img: "https://secureservercdn.net/192.169.221.188/ca0.384.myftpupload.com/wp-content/uploads/2015/02/5-startegies-for-finding-a-dream-job.jpg"}]; 
+    
   ngOnInit() {
   }
 

@@ -24,7 +24,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
-
+import {FormControl, Validators} from '@angular/forms';
 @NgModule({
   imports:[ AppRoutingModule ,BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule,MatSelectModule,MatOptionModule ],
 
