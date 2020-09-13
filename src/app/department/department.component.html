@@ -1,55 +1,43 @@
-
-
  
-<mat-grid-list cols="3" rowHeight="500px">
-  <mat-grid-tile *ngFor="let Employee of  HR_Employees">
-
-    <mat-card class="card">
-  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
-  <mat-card-content>
-       <h2>{{Employee.FirstName}} {{Employee.LastName}} </h2>
-    <p class="title">{{Employee.Title}}</p>
-    <p>
-      {{Employee.Age}}
-    </p>
-  </mat-card-content>
+<ul><li>IT Department </li></ul>
 <mat-grid-list cols="3" rowHeight="500px">
   <mat-grid-tile *ngFor="let Employee of  IT_Employees">
-
-    <mat-card class="card">
-  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:120%">
+<mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
   <mat-card-content>
        <h2>{{Employee.FirstName}} {{Employee.LastName}} </h2>
     <p class="title">{{Employee.Title}}</p>
-    <p>
-      {{Employee.Age}}
-    </p>
-  </mat-card-content>
+    <p>{{Employee.Age}}</p>
+     </mat-card-content>
+</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+  
 
-  <mat-grid-list cols="3" rowHeight="500px">
-  <mat-grid-tile *ngFor="let Employee of  Marketing_Employees>
-
-    <mat-card class="card">
+<ul><li>Marketing Department </li></ul>
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Employee of  Marketing_Employees">
+<mat-card class="card">
   <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
   <mat-card-content>
-       <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
+       <h2>{{Employee.FirstName}} {{Employee.LastName}} </h2>
     <p class="title">{{Employee.Title}}</p>
-    <p>
-      {{Employee.Age}}
-    </p>
-  </mat-card-content>
+    <p>{{Employee.Age}}</p>
+     </mat-card-content>
+</mat-card>
+  </mat-grid-tile>
 
 
 
-  <mat-grid-list cols="3" rowHeight="500px">
-  <mat-grid-tile *ngFor="let Employee of  Accounting_Employees>
-
-    <mat-card class="card">
+  <ul><li> Accounting Department </li></ul>
+<mat-grid-list cols="3" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Employee of  Accounting_Employees">
+<mat-card class="card">
   <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
   <mat-card-content>
-       <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
+       <h2>{{Employee.FirstName}} {{Employee.LastName}} </h2>
     <p class="title">{{Employee.Title}}</p>
-    <p>
-      {{Employee.Age}}
-    </p>
-  </mat-card-content>
+    <p>{{Employee.Age}}</p>
+     </mat-card-content>
+</mat-card>
+  </mat-grid-tile>
