@@ -20,13 +20,15 @@ import { ProjectComponent } from './project/project.component';
 import { DepartmentComponent } from './department/department.component';
 import {AppRoutingModule } from './app-routing.module';
 import { Routes, RouterModule } from '@angular/router';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
-
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
-  imports:[ AppRoutingModule ,BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule],
+  imports:[ AppRoutingModule ,BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule,MatSelectModule,MatOptionModule ],
 
-  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent, DepartmentComponent],
+  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent, DepartmentComponent, MainMenuComponent],
    entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
 })

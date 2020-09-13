@@ -1,37 +1,5 @@
 
-    <h3> Employee web </h3>
-  <nav class="navbar navbar-default">
-  
-    <router-outlet></router-outlet>
-    <button  routerLink="/employee">Employee</button>
-      <button routerLink="/department">Department</button>
-      <button routerLink="/project">Projects</button>
-    <router-outlet></router-outlet>
-  </nav>
-<button mat-raised-button >Add</button>
-<mat-grid-list cols="3" rowHeight="500px">
-  <mat-grid-tile *ngFor="let Employee of  Company_Employees">
-
-    <mat-card class="card">
-  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
-  <mat-card-content>
-       <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
-    <p class="title">{{Employee.Title}}</p>
-    <p>
-      {{Employee.Age}}
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button >Update</button>
-
-      <button mat-raised-button class="footBtn" (click)="openDialog(Employee)" color="warn">Delete</button>
-  </mat-card-actions>
-</mat-card>
-
-  </mat-grid-tile>
-</mat-grid-list>
- 
 
 
-  
- 
+<app-main-menu></app-main-menu>
+<router-outlet></router-outlet>
