@@ -1,9 +1,47 @@
 <h1> Department List</h1>
-<hr>
- <ul><li>HR Departmaent </li></ul>
- <mat-grid-list cols="10" rowHeight="500px">
-  <mat-grid-tile *ngFor="let Employee of  HR_Employees">
 
+ <mat-grid-list cols="1" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Employee of  HR_Employees">
+<mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <mat-card-content>
+       <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
+    <p class="title">{{Employee.Title}}</p>
+    <p>
+      {{Employee.Age}}
+    </p>
+  </mat-card-content>
+
+
+
+  <mat-grid-list cols="1" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Employee of  HR_Employees">
+<mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <mat-card-content>
+       <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
+    <p class="title">{{Employee.Title}}</p>
+    <p>
+      {{Employee.Age}}
+    </p>
+  </mat-card-content>
+
+
+  <mat-grid-list cols="1" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Employee of  HR_Employees">
+<mat-card class="card">
+  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
+  <mat-card-content>
+       <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
+    <p class="title">{{Employee.Title}}</p>
+    <p>
+      {{Employee.Age}}
+    </p>
+  </mat-card-content>
+
+
+  <mat-grid-list cols="1" rowHeight="500px">
+  <mat-grid-tile *ngFor="let Employee of  HR_Employees">
 <mat-card class="card">
   <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
   <mat-card-content>
@@ -15,17 +53,6 @@
   </mat-card-content>
 
 <ul><li> IT Departmaent </li></ul>
-<mat-grid-list cols="10" rowHeight="500px">
-  <mat-grid-tile *ngFor="let Employee of  IT_Employees">
 
-<mat-card class="card">
-  <img class="img-container"  mat-card-image src="{{Employee.img}}" alt="Photos of CodeTripe Employee" style="width:100%">
-  <mat-card-content>
-       <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
-    <p class="title">{{Employee.Title}}</p>
-    <p>
-      {{Employee.Age}}
-    </p>
-  </mat-card-content>
 <ul><li>Marketing Departmaent </li></ul>
 <ul><li>Accounting Departmaent </li></ul><hr>
