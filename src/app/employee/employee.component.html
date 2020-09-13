@@ -1,5 +1,5 @@
 <h1>Employee list </h1>
-<mat-grid-list cols="10" rowHeight="500px">
+<mat-grid-list cols="5" rowHeight="300px">
   <mat-grid-tile *ngFor="let Employee of  Company_Employees">
 
     <mat-card class="card">
@@ -7,7 +7,10 @@
   <mat-card-content>
        <h1>{{Employee.FirstName}} {{Employee.LastName}} </h1>
     <p class="title">{{Employee.Title}}</p>
-    <p>
-      {{Employee.Age}}
-    </p>
-  </mat-card-content>
+    <p>{{Employee.Age}}</p>
+ <button color="warn">Update</button>
+<button  color="warn">Delete</button>
+       </mat-card-content>
+</mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
