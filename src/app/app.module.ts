@@ -25,10 +25,11 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import {FormControl, Validators} from '@angular/forms';
+import { AddNewComponent } from './add-new/add-new.component';
 @NgModule({
   imports:[ AppRoutingModule ,BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule,MatSelectModule,MatOptionModule ],
 
-  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent, DepartmentComponent, MainMenuComponent],
+  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent, DepartmentComponent, MainMenuComponent, AddNewComponent],
    entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
 })
