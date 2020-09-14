@@ -1,18 +1,23 @@
+
+     <br>
+<br> 
+<h1> add new employee </h1>
+<mat-label>First Name : </mat-label><br>
+<input #FName="ngModel"  ngModel name="FName" matInput >
 <br>
-  <label for = "name" class="control-label">First Name :</label>
-
-<mat-form-field appearance="fill">
-    <mat-label>First Name</mat-label>
-    <input #FirstName="ngModel" ngModel name="FirstName" matInput >
-  </mat-form-field>
+<mat-label>Last Name : </mat-label><br>
+<input #LastName="ngModel"  ngModel name="LastName" matInput >
+<br>
+<mat-label>Title : </mat-label><br>
+<input  #Title="ngModel" ngModel name="Title" matInput ><br>
+<mat-label>Department : </mat-label><br>
+<input  #Department="ngModel" ngModel name="Department" matInput ><br>
+<mat-label>Age : </mat-label><br>
+<input #Age="ngModel"  ngModel name="Age" matInput  ><br>
+<mat-label>Image Url</mat-label><br>
+<input #imageUrl="ngModel"  ngModel name="imageUrl" matInput  class="example-right-align" >
+<br><br>        
+<button >save</button>
    
-
-
-
-
-
-
-  <label for = "name" class="control-label">Last Name :</label>
    
-     <label for = "name" class="control-label">Age :</label>
-  <button mat-raised-button>save</button>
+      
