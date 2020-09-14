@@ -15,7 +15,7 @@ const appRoutes:Routes = [
   { path:'employee',component:EmployeeComponent },
   { path:'department', component:DepartmentComponent },
   { path:'project' , component:ProjectComponent},
-  { path:'/add-new' , component:AddNewComponent}
+  { path:'add-new' , component:AddNewComponent}
 ]
 
 @NgModule({
