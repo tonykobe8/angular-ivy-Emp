@@ -25,10 +25,11 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import {FormControl, Validators} from '@angular/forms';
 import { AddNewComponent } from './add-new/add-new.component';
+import { AppUpdateComponent } from './app-update/app-update.component';
 @NgModule({
   imports:[ AppRoutingModule ,BrowserModule,BrowserAnimationsModule, FormsModule,ReactiveFormsModule,MatCardModule,MatButtonModule,MatGridListModule,MatDialogModule,MatToolbarModule,MatIconModule,MatFormFieldModule,MatInputModule ,MatDialogModule,MatSelectModule,MatOptionModule ],
 
-  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent, DepartmentComponent, MainMenuComponent, AddNewComponent],
+  declarations: [ AppComponent, DialogComponent, HelloComponent, EmployeeComponent, ProjectComponent, DepartmentComponent, MainMenuComponent, AddNewComponent, AppUpdateComponent],
    entryComponents:[DialogComponent],
   bootstrap:    [ AppComponent ]
 })
