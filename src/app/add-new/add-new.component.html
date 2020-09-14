@@ -1,6 +1,18 @@
 <br>
-  <label for = "name" class="control-label">First Name :<  /label>
+  <label for = "name" class="control-label">First Name :</label>
+
+<mat-form-field appearance="fill">
+    <mat-label>First Name</mat-label>
+    <input #FirstName="ngModel" ngModel name="FirstName" matInput >
+  </mat-form-field>
+   
+
+
+
+
+
+
   <label for = "name" class="control-label">Last Name :</label>
    
-     <label for = "name" class="control-label">age :</label>
+     <label for = "name" class="control-label">Age :</label>
   <button mat-raised-button>save</button>
