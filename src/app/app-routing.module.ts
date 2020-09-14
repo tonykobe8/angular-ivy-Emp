@@ -8,7 +8,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { ProjectComponent } from './project/project.component';
 import { DepartmentComponent } from './department/department.component';
 import { AddNewComponent } from './add-new/add-new.component';
-
+import { AppUpdateComponent } from './app-update/app-update.component';
 
 
 const appRoutes:Routes = [
